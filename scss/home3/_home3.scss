@@ -1,0 +1,1364 @@
+//   index-page three css start  //
+//   section  first css start    //
+.dating-wrapper-3{
+    position: relative;
+    width: 100%;
+    height:100%;
+    background-color: #fffdfd;
+        &::after{
+            content:'';
+            position: absolute;
+            display: block;
+            left:1%;
+            top:30px;
+            background-image:url('../images/ind3-side-shape-img-1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 555px;
+            height: 640px;
+    }
+    &::before{
+        content: "";
+        position: absolute; 
+        display: block;
+        left: 75px;
+        top:40%;
+        background-image: url('../images/ind3-heart-img-1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 112px;
+        height: 300px;
+        z-index: 2;
+        animation: swing ease-in-out 1s infinite alternate;
+    }
+    .date-img{
+        position: relative;
+        z-index: 1;
+    }
+    .take-a-change-3{
+        border-radius: 0px !important;
+        margin-top: 100px;
+        z-index:1;
+        position: relative;
+        .custum-select {
+            .dropdown {
+                &:hover{
+                background-color: #ec008c;
+                color: #ffffff;
+                }
+                &:focus{
+                    background-color: #ec008c !important;
+                    color: #ffffff;
+                }
+            }
+            .open {
+                background-color: #ec008c !important;
+            }
+            .option.selected {
+                background: #ec008c;
+                &:hover{
+                    background-color: #ec008c !important;
+                    color: #ffffff;
+                }
+            }
+             .option:hover, .option:focus {
+                background-color: #ec008c !important;
+                color: #ffffff;
+            }
+        }
+    }
+    .dating-content{
+        position: relative;
+        .heading{
+            span{
+                color:#191919;
+                font-family:$cont-font;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 10px;
+                font-weight: 600;
+            }
+            h2{
+                max-width: 465px;
+                line-height: 75px;
+                color: #d40073;
+                font-size: 70px;
+            }
+        }
+        p{
+            margin-top: 45px;
+            color:#777777;
+            line-height:35px;
+        }
+        .index-3-btn{
+            margin: 45px 0px 0px 0px;
+        }
+        &::after{
+            content: "";
+           position: absolute;
+           display: block;
+           right:2%;
+           top:25%;
+           background-image: url(../images/ind3-cloud-shape-1.png);
+           background-repeat: no-repeat;
+           background-size: cover;
+           width: 200px;
+           height: 100px;
+           animation: rotate 3s infinite ease-in-out;
+         }
+    }
+    // slider  css  start 
+    .dating-slider{
+        z-index:2;
+    }
+    .carousel-control-prev {
+        left: -13%;
+        top:45%;
+        background-color: #ffff;
+        width:40px;
+        height:40px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        transition:all 0.5s ;
+       span{
+        svg{
+            fill:#d40073;
+            width:25px;
+            height:22px;
+         }
+       }
+    }
+    .carousel-control-next{
+        right: -13%;
+        top:45%;
+        background-color: #ffff;
+        width:40px;
+        height:40px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        transition:all 0.5s ; 
+        span{
+            svg{
+                fill:#d40073;
+                width:25px;
+                height:22px;
+             }
+        }
+    }
+}
+//   section second css start    //
+.meet-wrapper{
+    position: relative;
+    width: 100%;
+    height:100%;
+    padding: 10px 0px  100px 0px;
+    background-color: #fffdfd;
+    .dating-content{
+        position: relative;
+        .heading{
+            span{
+                color:#191919;
+                font-family:$cont-font;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 10px;
+                font-weight: 600;
+            }
+            h2{
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+        p{
+            margin-top: 45px;
+            color:#777777;
+            line-height:35px;
+        }
+        .index-3-btn{
+            margin: 45px 0px 0px 0px;
+        }
+    }
+    .date-img{
+        position: relative;
+        z-index: 1;
+    }
+    .side-shape{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            display: block;
+            right: 0%;
+            bottom: -140px;
+            background-image: url(../images/ind3-side-shape-img-2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 555px;
+            height: 709px;
+        }
+    }
+    .side-shape-2{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            display: block;
+            right: 60px;
+            bottom: -90px;
+            background-image: url('../images/ind3-bird-img-1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 200px;
+            height: 145px;
+            animation: geometric-form-animation 1s alternate ease-in-out infinite;
+        }
+    }
+    .side-shape-3{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            right: 60px;
+            top: -490px;
+            background-image: url('../images/ind3-bird-img-1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 200px;
+            height: 145px;
+            animation: geometric-form-animation 1s alternate ease-in-out infinite;
+        }
+    }
+    .side-shape-5{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            left: 22px;
+            bottom: -70px;
+            background-image: url('../images/ind3-cloud-shape-2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 210px;
+            height: 100px;
+        }
+    }
+    .side-shape-4{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            right: 2%;
+            bottom: 160px;
+            background-image: url('../images/ind3-cloud-shape-1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 235px;
+            height: 150px;
+            animation: rotate 3s infinite ease-in-out;
+        }
+    }
+}
+//  section third css start    //
+.doctor-love-next{
+    padding: 80px 0px 80px 0px!important;
+    position:relative;
+    .heading{
+        position: relative;
+        z-index: 2;
+    }
+    .index-three-counter{
+        position: relative;
+        z-index:3;
+        ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 120px;
+        li{
+            input{
+                background-color:#f7f7f7;
+                max-width:215px;
+                height:45px;
+                display: block;
+                border:2px solid #e2e2e2;
+                color:#d40073;
+                padding-left: 30px;
+                margin-bottom: 40px;
+                font-size:16px;
+                outline: none;
+                position: relative;
+            }
+             .enter-name1{
+                position: relative;
+                label{
+                    &::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 130px;
+                        height: 6px;
+                        background-color: #d40073;
+                        right: -130px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 1;
+                    }
+                    span{
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        text-align: left;
+                        color:#797979;
+                    }
+                }
+             }
+             .enter-name2{
+                position: relative;
+                label{
+                    &::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 130px;
+                        height: 6px;
+                        background-color: #d40073;
+                        left: -130px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 1;
+                    }
+                    span{
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        text-align: left;
+                        color:#797979;
+                    }
+                }
+             }
+          }
+        }
+    }
+    .counter-btn-box{
+        clear:both;
+        padding-top: 56px;
+        position:relative;
+        z-index: 3;
+    }
+    &::after{
+        content:'';
+        position: absolute;
+        display: block;
+        left:1%;
+        top:50%;
+        background-image:url('../images/ind3-side-shape-img-3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 590px;
+        height: 650px;
+        z-index:2;
+}
+&::before{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 4%;
+    top:40%;
+    background-image: url('../images/ind3-bird-img-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 187px;
+    z-index: 3;
+    animation: geometric-form-animation 1s alternate ease-in-out infinite;
+}
+.cloud-shape{
+  position: relative;
+  &::after{
+    content: "";
+   position: absolute;
+   display: block;
+   right: 5%;
+   top: 250px;
+   background-image: url('../images/ind3-cloud-shape-1.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 200px;
+   height: 100px;
+   animation: rotate 3s infinite ease-in-out;
+ }
+ &::before{
+    content: "";
+   position: absolute;
+   display: block;
+   right: 2%;
+   top: 400px;
+   background-image: url('../images/ind3-heart-line-shape-2.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 330px;
+   height: 230px;
+   z-index:2;
+   animation: swing ease-in-out 1s infinite alternate;
+ }
+}
+}
+//   section forth css start    //
+.counter-section-ind-3{
+    position: relative;
+    width: 100%;
+    height:100%;
+    background-color: #fffdfd !important;
+    .heading{
+        position: relative;
+        z-index: 2;
+    }
+    .inner-counter-box{
+        margin-top: 60px;
+        position: relative;
+        z-index:1;
+        .counter-box-next{
+            background-color: #ffffff;
+            width:250px;
+            height:235px;
+            box-shadow: 0 20px 46px 12px #b60e0e0d;
+            transition: all  0.5s;
+            border: 2px solid transparent;
+            .counter-icon{
+              margin-bottom: 28px;
+            }
+            padding: 30px;
+            .counter-text{
+              color:#121e28;
+              font-size:26px;
+              p{
+                  font-size:16px;
+                  color:#121e28;
+                  margin-top:15px;
+                  border-bottom: 1px solid #d40073;
+                  padding-bottom: 15px;
+              }
+          }
+          &:hover{
+            border:2px solid #d40073;
+           .counter-text{
+            color:#d40073;
+            p{
+                font-size:16px;
+                color:#121e28;
+            }
+          }
+        }
+    }
+}
+&::before{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 50px;
+    top:10%;
+    background-image: url('../images/ind3-heart-img-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 112px;
+    height: 300px;
+    z-index: 2;
+    animation: swing ease-in-out 1s infinite alternate;
+}
+&::after{
+    content: "";
+   position: absolute;
+   display: block;
+   left: 4%;
+   bottom: 0%;
+   background-image: url('../images/ind3-cloud-shape-1.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 200px;
+   height: 100px;
+   animation: rotate 3s infinite ease-in-out;
+ }
+}
+//  section fifth css start    //
+.how-it-work-next{
+    position: relative;
+    width: 100%;
+    height:100%;
+    background-color: #fffdfd !important;
+    .heading {
+        position: relative;
+        z-index: 2;
+        h2 {
+            font-size: 44px;
+            font-family:$cont-font;
+        }
+    }
+    .counter-box-2{
+        .counter-icon{
+            background-color: #f6cce3 !important;
+            border: 1px solid #f6cce3 !important;
+            img{
+                display: block;
+                margin: 0 auto;
+                padding: 19px 0px;
+            }
+        }
+        .counter-text-2{
+             h5{
+                font-family:$cont-font;
+                color:#898989;
+             }
+        }
+    }
+    .line-box{
+        position: relative;
+        width:100%;
+        height:auto;
+        z-index:4;
+        &::before{
+            content:'';
+            position: absolute;
+            display: block;
+            left: 18%;
+            top: 25%;
+            background-image: url('../images/ind3-line-img.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 67%;
+            height: 2px;
+        }
+    }
+    &::after{
+        content:'';
+        position: absolute;
+        display: block;
+        left:0%;
+        top:30px;
+        background-image:url('../images/ind3-side-shape-img-4.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 489px;
+        height: 620px;
+        z-index:2;
+}
+&::before{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 45px;
+    top:30%;
+    background-image: url('../images/ind3-heart-img-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 112px;
+    height: 300px;
+    z-index: 3;
+    animation: swing ease-in-out 1s infinite alternate;
+}
+
+.cloud-shape{
+    position: relative;
+    &::after{
+      content: "";
+     position: absolute;
+     display: block;
+     right: 2%;
+     top: -130px;
+     background-image: url('../images/ind3-cloud-shape-1.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 200px;
+     height: 100px;
+    animation: rotate 3s infinite ease-in-out;
+   }
+  }
+}
+//  section sixth css start    //
+.main-customers-slider-2{
+    position: relative;
+    width: 100%;
+    height:100%;
+    background-color: #fffdfd !important;
+    .heading{
+        position: relative;
+        z-index: 2;
+    }
+     .customers-slider {
+        .slider-box{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 40px;
+        padding-left: 97px;
+        background-color: #ffffff;
+        border:1px solid #8080801a;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        .slider-text{
+            .quote-icon {
+                width: 67px;
+                position: absolute;
+                top: -72px !important;
+                left:121% !important;
+            }
+          }
+       }
+       .owl-nav {
+        display: flex;
+        row-gap: 10px;
+        column-gap: 20px;
+        position: absolute;
+        flex-direction: inherit !important;
+        top: 80%;
+        left: 79%;
+        transform: translate(86%, -74%);
+    }
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        display: block;
+        right: 0%;
+        bottom: 0%;
+        background-image: url('../images/ind3-side-shape-img-5.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 464px;
+        height: 734px;
+    }
+    &::after{
+        content: "";
+       position: absolute;
+       display: block;
+       right: 2%;
+       top:2%;
+       background-image: url('../images/ind3-heart-line-shape-2.png');
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 330px;
+       height: 230px;
+       z-index:2;
+       animation: swing ease-in-out 1s infinite alternate;
+     }
+     .shapes{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            display: block;
+            left: 45px;
+            top:40%;
+            background-image: url('../images/ind3-heart-img-1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 112px;
+            height: 300px;
+            animation: swing ease-in-out 1s infinite alternate;
+        }
+     }
+}
+//  section  seventh css start    //
+.blog-next{
+    position: relative;
+    width: 100%;
+    height:100%;
+    background-color: #fffdfd !important;
+    padding: 60px 0px;
+    .heading{
+        position: relative;
+        z-index: 2;
+    }
+    .blog-box-next{
+        position:relative;
+        .blog-text{
+            .date-box{
+                a{
+                   display:block;
+                   text-align:left;
+                   color:#d40073;
+                }
+            }
+            .btn{
+                display:block;
+                text-align:left;
+                font-size: 16px;
+                color:#d40073;
+                transition:all 0.5s;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .h5{
+                display:block;
+                text-align:left;
+                font-size: 22px;
+                font-family:$cont-font;
+                margin-top:20px;
+                line-height: 30px;
+                color:#111111;
+            }
+            p{
+                text-align: left;
+                line-height: 30px;
+                font-size:16px;
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
+        }
+    }
+    &::after{
+        content: "";
+       position: absolute;
+       display: block;
+       left:2%;
+       top:0%;
+       background-image: url('../images/ind3-cloud-shape-1.png');
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 200px;
+       height: 100px;
+       animation: rotate 3s infinite ease-in-out;
+     }
+    // slider css start  //
+    .blog-slider{
+        position:relative;
+        .owl-carousel {
+            .owl-nav{
+                display: flex;
+                justify-content: space-between;
+                position:absolute;
+                font-size:50px;
+                top:40%;
+                width:100%;
+                .owl-prev{
+                    position: relative;
+                    left:0%;
+                    background-color: #d40073;
+                    width:40px;
+                    height: 40px;
+                    border:2px solid transparent;
+                    transition: all 0.5s;
+                    span{
+                        color:#ffffff;
+                    }
+                    &:hover{
+                        background-color: transparent;
+                        border:2px solid #d40073;
+                        span{
+                            color:#d40073;
+                        }
+                    }
+                }
+                .owl-next{
+                    position: relative;
+                    right:0%;
+                    background-color: #d40073;
+                    width:40px;
+                    height: 40px;
+                    transition: all 0.5s;
+                    span{
+                      color:#ffffff;
+                    }
+                      &:hover{
+                        background-color: transparent;
+                        border:2px solid #d40073;
+                        span{
+                            color:#d40073;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//  section  eighth css start    //
+.footer-index-3{
+    .main-search-2{
+        &::after{
+            background-image: url('../images/ind3-footer-bg-img.png') !important;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width:100%;
+            height:100%;
+            background-color: #fffdfd !important;
+        }
+        ul{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            margin-top: 100px;
+            li{
+                .heading{
+                    p{
+                    margin-left: 0px !important;
+                    color:#afb4b4;
+                    font-family:$cont-font;
+                    }
+                    h3{
+                        font-size: 30px;
+                        font-family:$cont-font;
+                        font-weight: 300;
+                        margin-bottom: 20px;
+                    }
+                }
+                .search-box {
+                    .main-btn {
+                        border-radius: 0 0px 0px 0;
+                        background: transparent;
+                } 
+                input {
+                    background-color: transparent  !important;
+                    border-left:5px solid  #d40073;
+               } 
+            }
+        }
+    }
+    .bottom-line{
+        display: block;
+        border-bottom: 1px solid #ccf8f8;
+        margin-top:55px;
+    }
+  }
+    .footer-bottom{
+        background-color:#f2fdfd;
+        width:100%;
+        border-top: 1px solid  #ccf8f8;
+    }
+     .bootem-footer {
+        border-top: 1px solid #ccf8f8;
+    }
+    .footer-content{
+        .media-icon-index-3{
+            li{
+                a{
+                   border-color: transparent !important;
+                   i{
+                      color:#d40073;
+                   }
+                   &:hover{
+                    background: #d40073 !important;
+                    border-color: transparent;
+                    i{
+                        color:#ffffff;
+                    }
+                   }
+                }
+            }
+        }
+    }
+}
+// responsive start //
+ @media ( max-width:1799px) {
+    .meet-wrapper .side-shape-4::after {
+        bottom: 231px;
+    }
+    .meet-wrapper .side-shape-2::before {
+        bottom: 35px;
+        height: 148px;
+    }
+    .meet-wrapper .side-shape-5::after {
+        bottom: 120px;
+    }
+     .doctor-love-next .cloud-shape::after {
+        top: 50px;
+    }
+     .doctor-love-next::before {
+        top: 68%;
+    }
+ }
+@media ( max-width:1699px){
+    .dating-wrapper-3 .carousel-control-next {
+        right: -6%;
+    }
+    .dating-wrapper-3 .carousel-control-prev {
+        left: -6%;
+    }
+    .dating-wrapper-3::before {
+        left: 25px;
+    }
+    .counter-section-ind-3::before {
+        left: 20px;
+        top: -3%;
+    }
+    .main-customers-slider-2 .shapes::before {
+        left: 10px;
+    }
+    .meet-wrapper .side-shape-3::after {
+        right: 25px;
+    }
+    .meet-wrapper .side-shape-2::before {
+        right: 25px;
+    }
+    .dating-wrapper-3 .dating-content .heading h2 {
+        line-height: 55px;
+        font-size: 50px;
+    }
+}
+ @media (max-width:1499px) {
+    .dating-wrapper-3 .carousel-control-next {
+        right: -3%;
+    }
+    .dating-wrapper-3 .carousel-control-prev {
+        left: -3%;
+    }
+    .dating-wrapper-3::before {
+        left: 15px;
+        top: 17%;
+        width: 83px;
+        height: 223px;
+    }
+    .blog-next .blog-box-next .blog-text .h5 {
+        font-size: 17px;
+         margin-top: 15px;
+       line-height: 26px;  
+    }
+    .main-customers-slider-2 .customers-slider .slider-box .slider-text .quote-icon {
+        left: 94% !important;
+    }
+    .dating-wrapper-3 .dating-content .heading span {
+        font-size: 12px;
+        letter-spacing: 6px;
+    }
+    .main-customers-slider-2::after {
+        width: 206px;
+        height: 146px;
+    }
+     .doctor-love-next .cloud-shape::before {
+        width: 201px;
+        height: 140px;
+    }
+    .meet-wrapper .side-shape-3::after {
+        width: 140px;
+        height: 104px;
+    }
+    .meet-wrapper .side-shape-2::before {
+        width: 140px;
+        height: 104px;
+    }
+     .doctor-love-next::before {
+        left: 15px;
+        width: 140px;
+        height: 104px;
+    }
+    .meet-wrapper .side-shape-4::after {
+        width: 141px;
+        height: 70px;
+    }
+    .main-customers-slider-2 .shapes::before {
+        width: 72px;
+        height: 193px;
+    }
+    .how-it-work-next::before {
+        left: 20px;
+        width: 72px;
+        height: 193px;
+    }
+     .doctor-love-next::after {
+        width: 498px;
+        height: 536px;
+    }
+    .how-it-work-next::after {
+        width: 284px;
+        height: 366px;
+    }
+ }
+@media (max-width:1399px) {
+}
+@media (max-width:1199px) {
+    .dating-wrapper-3 .dating-content .heading h2 {
+        line-height: 48px;
+        font-size: 40px;
+    }
+    .dating-wrapper-3 .dating-content .heading h2 {
+        line-height: 48px;
+        font-size: 40px;
+    }
+    .dating-wrapper-3 .dating-content .index-3-btn {
+        max-width: 151px;
+    }
+    .meet-wrapper .dating-content .heading h2 {
+        font-size: 33px;
+        line-height: 38px;
+    }
+    .meet-wrapper .dating-content p {
+        margin-top: 15px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .how-it-work-next .cloud-shape::after {
+        width: 153px;
+        height: 77px;
+    }
+    .blog-next .blog-box-next .blog-text p {
+        line-height: 21px;
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 13px;
+    }
+    .blog .blog-box .blog-text {
+        padding: 20px 15px 20px;
+    }
+    .blog-next .blog-box-next .blog-text .h5 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .dating-wrapper-3 .dating-content p {
+        margin-top: 18px;
+        line-height: 28px;
+    }
+    .main-customers-slider-2::before {
+        width: 332px;
+        height: 495px;
+    }
+    .main-customers-slider-2::after {
+        width: 141px;
+        height: 100px;
+    }
+    .main-customers-slider-2 .customers-slider .owl-nav {
+        left: 84%;
+    }
+    .main-customers-slider-2 .customers-slider .slider-box .slider-text .quote-icon {
+        left: 79% !important;
+    }
+    .counter-section-ind-3 .inner-counter-box .counter-box-next {
+        width: 200px;
+    }
+    .blog-next .blog-box-next .blog-text .btn {
+        padding: 0;
+    }
+    .meet-wrapper .side-shape::before {
+        width: 447px;
+        height: 505px;
+    }
+     .doctor-love-next::after {
+        width: 400px;
+        height: 440px;
+    }
+    .doctor-love-next::before {
+        top: 78%;
+    }
+    .meet-wrapper .side-shape-3::after {
+        top: -465px;
+    }
+    header .main-header-three .main-menu .main-btn .menubtn-3 {
+        width: 135px;
+    }
+    .how-it-work-3 .heading p {
+        z-index: 3;
+    }   
+}
+ @media (max-width:991px) {
+    .main-customers-slider .customers-slider .owl-nav {
+         column-gap: 0px !important; 
+        justify-content: space-around !important;
+        top: 50% !important;
+    }
+    .dating-wrapper-3 .dating-content {
+        position: relative;
+        margin-top: 40px;
+        padding-left: 0px !important;
+    }
+    .dating-wrapper-3 .take-a-change-3 {
+        margin-top: 40px;
+    }
+    .dating-wrapper-3 {
+        padding:75px;
+    } 
+    .main-customers-slider .customers-slider .slider-box .slider-text {
+        margin-top: 30px;
+    }
+    .counter-section-ind-3 .inner-counter-box .counter-box-next {
+        width: 340px;
+        margin: 0 auto;
+    }
+    .counter-section-ind-3 .inner-counter-box .row {
+       row-gap: 20px;
+    }
+    .how-it-work-next .line-box::before {
+        top: 35%;
+    }
+    .doctor-love-next .index-three-counter ul {
+        column-gap: 75px;
+    }
+     .doctor-love-next .index-three-counter ul li .enter-name1 label::before {
+        width: 90px;
+        right: -90px;
+    }
+    .doctor-love-next .index-three-counter ul li .enter-name2 label::before {
+        width: 90px;
+        left: -90px;
+    }
+    .doctor-love-next .love-calculater .love-result h2 {
+        -webkit-text-fill-color: #d40073 !important;
+        font-size: 65px !important;
+    }
+    .doctor-love-next .love-calculater .love-result h2 {
+        top: 47% !important;
+        left:47% !important;
+    }
+     .doctor-love-next .index-three-counter ul li input {
+        max-width: 180px;
+    }
+    .main-customers-slider-2  .heading{
+        position:relative;
+        z-index:3;
+    }
+    .dating-wrapper-3 .carousel-control-prev { 
+        top: 33%;  
+    } 
+    .dating-wrapper-3 .carousel-control-next {
+        top: 33%;
+    }
+    .footer-index-3 .main-search-2 ul {
+        flex-wrap: wrap;
+    }
+    .blog-next .blog-slider .owl-carousel .owl-nav {
+        top: 45%;
+    }
+ }
+ @media (max-width:767px) {
+    .dating-wrapper-3 .carousel-control-prev {
+        top: 25%;
+    }
+    .dating-wrapper-3 .carousel-control-next {
+        top: 25%;
+    }
+     .doctor-love-next {
+        padding: 70px 0px 0px 0px !important;
+    }
+    .counter-section-ind-3 {
+        padding: 40px 0 70px;
+    }
+    .counter-section-ind-3 {
+        padding: 40px 0 70px;
+    }
+    .counter-section-ind-3::before {
+        width: 70px;
+        height: 187px;
+        top:-11%;
+    }
+    .how-it-work-next {
+        padding: 30px 0 50px !important;
+    }
+    .main-customers-slider-2 {
+        padding: 30px 0 !important;
+    }
+    .how-it-work-next .line-box::before {
+        display: none !important;
+    }
+    .dating-wrapper-3 {
+        padding: 30px;
+    }
+    .meet-wrapper {
+        padding: 40px 0px 100px 0px;
+    }
+    .counter-section-ind-3 .inner-counter-box .counter-box-next {
+        width: 280px;
+    }
+    .how-it-work .heading {
+        position: relative;
+        z-index: 3;
+    }
+     .doctor-love-next .index-three-counter ul {
+        column-gap: 40px;
+    }
+    .doctor-love-next .index-three-counter ul li .enter-name1 label::before {
+        width: 47px;
+        right: -47px;
+    }
+     .doctor-love-next .index-three-counter ul li .enter-name2 label::before {
+        width: 47px;
+        left: -47px;
+    }
+    .dating-wrapper-3 .dating-content p {
+        position: relative;
+        z-index: 2;
+    }
+ }
+  @media (max-width:676px) {
+     .doctor-love-next .index-three-counter ul li input {
+        max-width: 152px;
+    }
+    .counter-section-ind-3 .inner-counter-box .counter-box-next {
+        width: 243px;
+    }
+    .main-customers-slider .customers-slider .owl-nav {
+        column-gap: 15px !important;
+        top: 85% !important;
+        justify-content: end !important;
+        padding-right: 20px;
+    }
+    .doctor-love-next .love-calculater .love-result h2 {
+        font-size: 45px !important;
+    }
+    .doctor-love-next .cloud-shape::before {
+        width: 130px;
+        height: 89px;
+    }
+    .main-customers-slider-2::after {
+        top: -5%;
+    }
+    .dating-wapper-3 .dating-content {
+        padding-left: 0px !important;
+    }
+    .blog-next .heading {
+        position: relative;
+        z-index: 2;
+    }
+    .blog-next .blog-slider .owl-carousel .owl-nav {
+        top: 38%;
+    }
+  }
+  @media (max-width:576px){
+     .doctor-love-next .index-three-counter ul li input {
+        max-width: 130px;
+        padding-left: 10px;
+        font-size: 13px;
+    }
+    .blog .blog-box .blog-text {
+        padding: 20px 25px 20px;
+    }
+    .dating-wrapper-3::after {
+        display: none !important;
+    }
+    .doctor-love-next .index-three-counter ul li .enter-name1 label::before {
+        width: 36px;
+        right: -36px;
+    }
+     .doctor-love-next .index-three-counter ul li .enter-name2 label::before {
+        width: 36px;
+        left: -36px;
+    }
+     .doctor-love-next .index-three-counter ul {
+        column-gap: 28px;
+    }
+    .dating-wrapper-3 .carousel-control-prev {
+        top: 18%;
+    }
+    .dating-wrapper-3 .carousel-control-next {
+        top: 18%;
+    }
+    .meet-wrapper .side-shape::before {
+       display: none !important;
+    }
+    .main-customers-slider-2::before {
+       display: none !important;
+    }
+    .meet-wrapper .side-shape-2::before {
+      display: none;
+    }
+    .meet-wrapper .side-shape-3::after {
+     display: none !important;
+    }
+    .main-search-2{
+        padding-top:30px;
+    }
+    .dating-wrapper-3::before {
+        left: 8px;
+        top: 6%;
+    }
+    .main-customers-slider-2::after {
+        top: -9%;
+    }
+  }
+   @media (max-width:480px) {
+    .dating-wapper-3 .dating-content {
+        padding-left: 0px !important;
+    }
+    .dating-wrapper-3 .dating-content .index-3-btn {
+        margin: 25px 0px 0px 0px;
+    }
+    .doctor-love-next .love-calculater .love-result h2 {
+        font-size: 35px !important;
+    }
+     .doctor-love-next .index-three-counter ul {
+        flex-wrap: wrap !important;
+        row-gap: 30px;
+    }
+     .doctor-love-next .index-three-counter ul li .enter-name1 label::before {
+      display: none !important;
+    }
+     .doctor-love-next .index-three-counter ul li .enter-name2 label::before {
+       display: none !important;
+    }
+    .doctor-love-next .index-three-counter ul li input {
+        margin-bottom: 0px;
+    }
+    .main-customers-slider .customers-slider .owl-nav {
+        top: 5% !important;
+     }
+      .doctor-love-next::after {
+        display: none !important;
+    }
+     .doctor-love-next::before {
+          display: none !important;
+    }
+   }
+@media (max-width:380px) {
+    .dating-wrapper-3 .dating-content .heading h2 {
+        line-height: 33px;
+        font-size: 35px;
+    }
+    .dating-wrapper-3 .dating-content .heading h2 {
+        line-height: 33px;
+        font-size: 35px;
+    }
+    .how-it-work-next .heading h2 {
+        font-size: 35px;
+        font-family: "Lato", sans-serif;
+    }
+    .meet-wrapper .dating-content .heading h2 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .dating-wrapper-3 .carousel-control-prev {
+        top: 15%;
+    }
+    .dating-wrapper-3 .carousel-control-next {
+        top: 15%;
+    }
+    .dating-wrapper-3 .take-a-change-3 {
+        padding: 25px 20px !important;
+    }
+    .footer-index-3 .main-search-2 ul li .heading h3 {
+        font-size: 28px;
+    }
+    .counter-section-ind-3::before {
+         left:0;
+        top: -12%;
+    }
+    .meet-wrapper {
+        padding: 40px 0px 25px 0px;
+    }
+}
+
+//  animation  of  index  page  three  //
+//bird animation
+@keyframes geometric-form-animation {
+    0% {
+      transform: rotate(0deg);
+      
+    }
+    50% {
+      transform: rotate(5deg); 
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+// heart animation
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}  
+// cloud animation
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to { 
+      transform: rotate(3deg);
+    }
+  }
