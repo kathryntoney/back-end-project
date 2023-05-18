@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "postgres",
-    "password": null,
-    "database": "furiends",
-    "host": "127.0.0.1",
+    "username": "dcpkbsfr",
+    "password": "xL9iD5TMuSxGf6AhHU_e3cqZQ6jBweNg",
+    "database": "dcpkbsfr",
+    "host": "drona.db.elephantsql.com",
     "dialect": "postgres"
   }
 }
