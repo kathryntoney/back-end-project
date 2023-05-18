@@ -1,2 +1,7 @@
+GitHub:
 username: kathryntoney
 password: 2Z9GH66W4DwuErL
+
+ElephantSQL:
+user: 	dcpkbsfr
+password: xL9iD5TMuSxGf6AhHU_e3cqZQ6jBweNg
