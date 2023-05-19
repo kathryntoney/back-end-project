@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/profile', (req, res) => {
+router.get('/dashboard', (req, res) => {
 
 
-    res.render('profile')
+    res.render('dashboard')
 })
 
 
