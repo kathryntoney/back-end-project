@@ -27,10 +27,10 @@ app.use(passport.session())
 // app.use(require('./routes/login.js'))
 // app.use(require('./routes/registration.js'))
 // app.use(require('./routes/dashboard.js')) // manage your profile / settings
-// app.use(require('./routes/aboutus.js'))
+/app.use(require('./routes/about.js'))
 app.use(require('./routes/contactus.js'))
 // app.use(require('./routes/messages.js')) // DM with another dog
-// app.use(require('./routes/profile.js')) // view another dog's profile
+ app.use(require('./routes/profile.js')) // view another dog's profile
 // app.use(require('./routes/search.js')) // view another dog's profile
 
 app.listen(port, () => {
