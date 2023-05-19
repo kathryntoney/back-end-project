@@ -6,7 +6,7 @@ const init = (passport) => {
     passport.use(new passportLocal({ usernameField: 'email' }, async (email, password, done) => {
         try {
             console.log('checkpoint one');
-            let records = await db.users.findAll({ where: { email } })
+            let records = await db.owners.findAll({ where: { email } })
             if (records) {
                 console.log('checkpoint two inside records');
                 let record = records[0]
@@ -35,7 +35,7 @@ const init = (passport) => {
     passport.deserializeUser(async (id, done) => {
         try {
             console.log('checkpoint 6 ids did match after deserialization');
-            let foundUserInDBfromSessionID = await db.users.findByPk(id)
+            let foundUserInDBfromSessionID = await db.owners.findByPk(id)
             if (foundUserInDBfromSessionID) {
                 done(null, foundUserInDBfromSessionID)
             }
