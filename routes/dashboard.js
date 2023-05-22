@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../models');
+const cloudinary = require('../js/cloudinary');
 
 router.use(express.urlencoded({ extended: false }))
 router.use(express.json())

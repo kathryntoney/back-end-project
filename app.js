@@ -4,6 +4,7 @@ const helmet = require('helmet');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
 require('./auth/passport-config')(passport);
+const cloudinary = require('cloudinary').v2;
 const port = 3000;
 
 app.use(express.static('public'));
@@ -36,11 +37,6 @@ app.use(require('./routes/dashboard.js')) // manage your profile / settings
 //  app.use(require('./routes/profile.js')) // view another dog's profile
 // app.use(require('./routes/search.js')) // view another dog's profile
 
-cloudinary.config({ 
-    cloud_name: 'djputur9x', 
-    api_key: '393814593521973', 
-    api_secret: 'inE7ab_iEOOeC7Ljiw1aUqieGK8' 
-  });
 
 app.listen(port, () => {
     console.log(`listening on port ${port}`);
