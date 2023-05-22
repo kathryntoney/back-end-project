@@ -22,6 +22,7 @@
 	<meta name="keywords" content="fervor" />
 	<meta name="author" content="" />
 	<meta name="MobileOptimized" content="320" />
+	<link rel="stylesheet" href="css/dashboard.css">
 	<link rel="icon" type="image/png" href="images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
@@ -286,82 +287,7 @@
 								<i class="fas fa-heart"></i>
 							</div>
 						</div>
-						<div id="owner-info" class="input-info-box">
-							<div class="header">
-								About You (Owner)
-							</div>
-							<div class="content">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="my-input-box">
-											<label>Owner Name</label>
-											<input type="text" placeholder="Owner Name">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="my-input-box">
-											<label>Email</label>
-											<input type="text" placeholder="Public Email">
-										</div>
-									</div>
-									<!-- <div class="col-md-12">
-										<div class="my-input-box">
-											<textarea placeholder="Write a little description about you..."></textarea>
-										</div>
-									</div> -->
-									<!-- <div class="col-md-6">
-										<div class="my-input-box">
-											<label>Country</label>
-											<div class="custum-select">
-												<select class="">
-													<option value="" data-display-text="Select Country">Select Country
-													</option>
-													<option value="United State">United State</option>
-												</select>
-											</div>
-										</div>
-									</div> -->
-									<!-- <div class="col-md-6">
-										<div class="my-input-box">
-											<label>City</label>
-											<div class="custum-select">
-												<select class="">
-													<option value="" data-display-text="Select City">Select City
-													</option>
-													<option value="New Work">New Work</option>
-												</select>
-											</div>
-										</div>
-									</div> -->
-									<!-- <div class="col-md-6">
-										<div class="my-input-box">
-											<label>Birthday</label>
-											<input type="date">
-										</div>
-									</div> -->
-									<!-- <div class="col-md-6">
-										<div class="my-input-box">
-											<label>Status</label>
-											<div class="custum-select">
-												<select class="">
-													<option value="" data-display-text="In a Relationship">In a
-														Relationship</option>
-													<option value="Single">Single</option>
-													<option value="Marid">Marid</option>
-												</select>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="my-input-box">
-											<label>Birthplace</label>
-											<input type="text" placeholder="Birthplace">
-										</div>
-									</div> -->
-								</div>
-							</div>
-						</div>
-						<div id="owner-info" class="input-info-box">
+						<div id="dog-info" class="input-info-box">
 							<div class="header">
 								About Your Dog
 							</div>
@@ -418,7 +344,8 @@
 									<div class="col-md-6">
 										<div class="my-input-box">
 											<label>Description</label>
-											<textarea name="description" id="" cols="6" rows="4" placeholder="Describe your dog in a few sentences. Feel free to include links to their Instagram and/or TikTok pages!"></textarea>
+											<textarea name="description" id="" cols="6" rows="4"
+												placeholder="Describe your dog in a few sentences. Feel free to include links to their Instagram and/or TikTok pages!"></textarea>
 										</div>
 									</div>
 									<div class="input-info-box mt-5">
@@ -427,220 +354,124 @@
 										</div>
 										<div class="content">
 											<div class="row">
-												<div class="col-md-12">
-													<div class="my-input-box">
-														<label>Favorite Toy</label>
-														<select name="favetoy" id="fave-toy">
-															<option value="ball">BALL IS LIFE</option>
-															<option value="stuffy">Stuffed Animal</option>
-															<option value="chewy">Chewy Toy / Bone</option>
-															<option value="shoes">Owner's Shoes</option>
-															<option value="squeak">Anything That Squeaks</option>
-														</select>
+												<form action="/dashboard">
+													<div class="col-md-12">
+														<div class="my-input-box" id="fave-toy-list">
+															<label>Favorite Toys</label>
+															<select name="favetoy" id="fave-toy">
+																<option value="ball">BALL IS LIFE</option>
+																<option value="stuffy">Stuffed Animal</option>
+																<option value="chewy">Chewy Toy / Bone</option>
+																<option value="shoes">Owner's Shoes</option>
+																<option value="squeak">Anything That Squeaks</option>
+															</select>
+														</div>
+														<div class="my-input-box">
+															<label>Favorite Game</label>
+															<select name="favegame" id="fave-game">
+																<option value="tug">Tug-of-War</option>
+																<option value="chase">Chase</option>
+																<option value="wrestling">Wrestling</option>
+																<option value="bite">Bitey Face</option>
+																<option value="touch">No Touch, Only Throw</option>
+															</select>
+														</div>
 													</div>
-													<div class="my-input-box">
-														<label>Favorite Game</label>
-														<select name="favegame" id="fave-game">
-															<option value="tug">Tug-of-War</option>
-															<option value="chase">Chase</option>
-															<option value="wrestling">Wrestling</option>
-															<option value="bite">Bitey Face</option>
-															<option value="touch">No Touch, Only Throw</option>
-														</select>
-													</div>
-												</div>
-												<div class="col-md-12">
-													<div class="my-input-box">
-														<label>Favourite Music Bands / Artists</label>
-														<textarea
-															placeholder="Favourite Music Bands / Artists"></textarea>
-													</div>
-												</div>
-												<div class="col-md-12">
-													<div class="my-input-box">
-														<label>Favourite Movies</label>
-														<textarea placeholder="Favourite Movies"></textarea>
-													</div>
-												</div>
-												<div class="col-md-12">
-													<div class="my-input-box">
-														<label>Favourite Games </label>
-														<textarea placeholder="Favourite Games "></textarea>
-													</div>
-												</div>
-												<div class="col-md-12">
-													<div class="my-input-box">
-														<label>Favourite Games </label>
-														<textarea placeholder="Favourite Games"></textarea>
-													</div>
-												</div>
+													<button id="submit-btn">
+														<span>Submit</span>
+													</button>
+												</form>
 											</div>
 										</div>
-									</div>
-									<div class="input-info-box mt-5">
-										<div class="header">
-											Jobs &amp; Education
-										</div>
-										<div class="content">
-											<div class="row">
-												<div class="col-md-12">
-													<div class="my-input-box">
-														<label>Title or Place</label>
-														<input type="text" placeholder="Title or Place">
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="my-input-box">
-														<label>Year Started</label>
-														<div class="custum-select">
-															<select class="">
-																<option value="" data-display-text="2014">2014</option>
-															</select>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="my-input-box">
-														<label>Year End</label>
-														<div class="custum-select">
-															<select class="">
-																<option value="" data-display-text="2017">2017</option>
-															</select>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-12">
-													<div class="my-input-box">
-														<label>Description</label>
-														<textarea placeholder="Description"></textarea>
-													</div>
-												</div>
-												<div class="col-md-12">
-													<div class="my-input-box">
-														<label>Title or Place</label>
-														<input type="text" placeholder="Title or Place">
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="my-input-box">
-														<label>Year Started</label>
-														<div class="custum-select">
-															<select class="">
-																<option value="" data-display-text="2014">2014</option>
-															</select>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="my-input-box">
-														<label>Year End</label>
-														<div class="custum-select">
-															<select class="">
-																<option value="" data-display-text="2017">2017</option>
-															</select>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-12">
-													<div class="my-input-box">
-														<label>Description</label>
-														<textarea placeholder="Description"></textarea>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="buttons  mt-4">
-										<button type="submit" class="main-btn">Save Changes</button>
-										<button class="custom-button">Discard All</button>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div id="footer">
-					<div class="w-100 float-start main-search">
-						<div class="container">
-							<div class="heading center-heading heading-white">
-								<h2>Subscribe <strong>With</strong> Us</h2>
-								<p>Crewneck Heather Grey Sweatshirt Made</p>
-							</div>
-							<div class="search-box">
-								<input type="text" name="search" placeholder="Enter Your Email">
-								<button type="button" class="main-btn main-btn-iocn">
-									<span class="d-none-btn">Subscribe</span>
-									<span class="icon">
-										<i class="fas fa-paper-plane"></i>
-									</span>
-								</button>
+					<div id="footer">
+						<div class="w-100 float-start main-search">
+							<div class="container">
+								<div class="heading center-heading heading-white">
+									<h2>Subscribe <strong>With</strong> Us</h2>
+									<p>Crewneck Heather Grey Sweatshirt Made</p>
+								</div>
+								<div class="search-box">
+									<input type="text" name="search" placeholder="Enter Your Email">
+									<button type="button" class="main-btn main-btn-iocn">
+										<span class="d-none-btn">Subscribe</span>
+										<span class="icon">
+											<i class="fas fa-paper-plane"></i>
+										</span>
+									</button>
+								</div>
 							</div>
 						</div>
+						<footer class="w-100 float-start">
+							<div class="container">
+								<div class="main-footer-logo">
+									<a href="index.html">
+										<img src="images/logo.png" class="img-fluid" alt="logo">
+									</a>
+								</div>
+								<div class="footer-content text-center">
+									<p>This theme extends default WordPress profiles. User can edit profile fields,
+										upload
+										photos, add
+										favorites, view gifts and read messages, edit privacy settings without even
+										seeing .
+									</p>
+									<ul class="media-icon">
+										<li><a href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="javascript:;"><i class="fab fa-google-plus-g"></i></a></li>
+										<li><a href="javascript:;"><i class="fab fa-linkedin-in"></i></a></li>
+										<li><a href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="javascript:;"><i class="fab fa-skype"></i></a></li>
+									</ul>
+								</div>
+								<div class="bootem-footer">
+									<p>© Copyright 2023 by <span>Fervor</span> - Design by <a
+											href="https://webstrot.com/">Webstrot</a>.
+									</p>
+									<ul>
+										<li><a href="community.html">Community</a></li>
+										<li><a href="blog.html">Blog</a></li>
+										<li><a href="contact.html">Conatct Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</footer>
 					</div>
-					<footer class="w-100 float-start">
-						<div class="container">
-							<div class="main-footer-logo">
-								<a href="index.html">
-									<img src="images/logo.png" class="img-fluid" alt="logo">
-								</a>
-							</div>
-							<div class="footer-content text-center">
-								<p>This theme extends default WordPress profiles. User can edit profile fields, upload
-									photos, add
-									favorites, view gifts and read messages, edit privacy settings without even seeing .
-								</p>
-								<ul class="media-icon">
-									<li><a href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="javascript:;"><i class="fab fa-google-plus-g"></i></a></li>
-									<li><a href="javascript:;"><i class="fab fa-linkedin-in"></i></a></li>
-									<li><a href="javascript:;"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="javascript:;"><i class="fab fa-skype"></i></a></li>
-								</ul>
-							</div>
-							<div class="bootem-footer">
-								<p>© Copyright 2023 by <span>Fervor</span> - Design by <a
-										href="https://webstrot.com/">Webstrot</a>.
-								</p>
-								<ul>
-									<li><a href="community.html">Community</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="contact.html">Conatct Us</a></li>
-								</ul>
-							</div>
-						</div>
-					</footer>
-				</div>
-				<script src="js/jquery-3.6.0.min.js"></script>
-				<script src="js/jquery-ui.min.js"></script>
-				<script src="js/bootstrap.min.js"></script>
-				<script src="js/bootstrap.bundle.js"></script>
-				<script src="js/vanilla-tilt.min.js"></script>
-				<script src="js/owl.carousel.js"></script>
-				<script src="js/range-slider.js"></script>
-				<script src="js/custom.js"></script>
-				<script>
-					$('.match-slider .owl-carousel').owlCarousel({
-						loop: true,
-						items: 1,
-						margin: 30,
-						nav: true,
-						dots: false,
-						autoplay: false,
-						responsive: {
-							0: {
-								items: 1
-							},
-							600: {
-								items: 1,
-								nav: false
-							},
-							1025: {
-								items: 1,
-								nav: true
+					<script src="js/jquery-3.6.0.min.js"></script>
+					<script src="js/jquery-ui.min.js"></script>
+					<script src="js/bootstrap.min.js"></script>
+					<script src="js/bootstrap.bundle.js"></script>
+					<script src="js/vanilla-tilt.min.js"></script>
+					<script src="js/owl.carousel.js"></script>
+					<script src="js/range-slider.js"></script>
+					<script src="js/custom.js"></script>
+					<script>
+						$('.match-slider .owl-carousel').owlCarousel({
+							loop: true,
+							items: 1,
+							margin: 30,
+							nav: true,
+							dots: false,
+							autoplay: false,
+							responsive: {
+								0: {
+									items: 1
+								},
+								600: {
+									items: 1,
+									nav: false
+								},
+								1025: {
+									items: 1,
+									nav: true
+								}
 							}
-						}
-					})
-				</script>
+						})
+					</script>
 </body>
 
 </html>
