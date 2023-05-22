@@ -1,0 +1,21 @@
+/* checkbox {
+    width: 5px;
+    height: 10px;
+} */
+
+label.checkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+input[type="checkbox"] {
+    -webkit-transform: scale(0.5); /* Safari and Chrome */
+    transform: scale(0.5);
+  }
+
+
+/* #fave-toy-list {
+    display: flex;
+    flex-direction: co;
+} */
