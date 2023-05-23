@@ -28,7 +28,8 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
-      }
+      }, randomString: {
+        type: Sequelize.STRING}
     });
   },
   async down(queryInterface, Sequelize) {

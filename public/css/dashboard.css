@@ -1,21 +1,18 @@
-/* checkbox {
-    width: 5px;
-    height: 10px;
-} */
-
-label.checkbox-label {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 5px;
+input[type=radio] {
+-webkit-transform: scale(0.5);
 }
 
-input[type="checkbox"] {
-    -webkit-transform: scale(0.5); /* Safari and Chrome */
-    transform: scale(0.5);
-  }
-
-
-/* #fave-toy-list {
+#size-div {
     display: flex;
-    flex-direction: co;
-} */
+    flex-direction: column;
+}
+
+#energy-div {
+    display: flex;
+    flex-direction: column;
+}
+
+#fixed-div {
+    display: flex;
+    flex-direction: column;
+}
