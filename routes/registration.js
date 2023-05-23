@@ -56,7 +56,7 @@ router.post('/registration', async (req, res) => {
            randomString: randomString // Add the generated random string to the record
         })
         console.log(insertRecord);
-           res.send(insertRecord)
+           res.redirect('/login')
    
         
 
