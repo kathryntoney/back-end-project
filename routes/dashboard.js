@@ -49,13 +49,20 @@ router.post('/dashboard', async (req, res) => {
 })
 
 router.post('/dashboard1', upload.single("imageURL"), async (req, res) => {
-    // multer places this image on the request in an object called file
+    try {
+        // multer places this image on the request in an object called file
     console.log(req.file, req.file.filename);
     // let name = req.file.filename
     let picture = req.file.path
     let upload = await cloudinary.uploader.upload(picture)
-    console.log(upload);
-
+    console.log(upload.url); 
+    let imageURL = upload.url
+    
+    res.redirect('/dashboard')
+    } catch (error) {
+        console.log('error in upload');
+    }
+   
 })
 
 // const uploadImg = async (img) => {
