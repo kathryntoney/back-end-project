@@ -17,7 +17,7 @@ cloudinary.config({
     cloud_name: process.env.CLOUD_NAME,
     api_key: process.env.CLOUD_KEY,
     api_secret: process.env.CLOUD_SECRET
-  });
+});
 
 router.post('/dashboard', async (req, res) => {
     try {
@@ -40,11 +40,19 @@ router.post('/dashboard', async (req, res) => {
         })
         res.redirect('/dashboard')
     } catch (error) {
-        console.log('inside error');
-        res.render('/dashboard', {
-            error: `registration didn't work, try again`
-        })
+      console.log('error inside submit');
     }
 })
+
+// const uploadImg = async (img) => {
+//     try {
+//         let picture = await cloudinary.uploader.upload(img, { resource_type: "auto" })
+//         console.log(picture);
+//         let imageURL = await cloudinary.url(img)
+//         console.log(imageURL);
+//     } catch (error) {
+//         console.log('image upload error');
+//     }
+// }
 
 module.exports = router;

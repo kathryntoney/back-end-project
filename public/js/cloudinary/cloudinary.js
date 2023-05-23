@@ -13,12 +13,15 @@ const uploadImg = async (img) => {
   try {
     let result = await cloudinary.uploader.upload(img)
     console.log(result);
+    let imageURL = await cloudinary.url(img)
+    console.log(imageURL);
   } catch (error) {
     console.log('error');
   }
 }
 
 uploadImg('./images/IMG_6596.jpg')
+
 
 
 // async function run() {
