@@ -1,0 +1,18 @@
+input[type=radio] {
+-webkit-transform: scale(0.5);
+}
+
+#size-div {
+    display: flex;
+    flex-direction: column;
+}
+
+#energy-div {
+    display: flex;
+    flex-direction: column;
+}
+
+#fixed-div {
+    display: flex;
+    flex-direction: column;
+}
