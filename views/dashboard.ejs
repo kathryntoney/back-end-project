@@ -280,72 +280,91 @@
 					</div>
 				</div>
 				<div class="col-lg-8 col-md-12 col-12">
-					<div class="my-profile">
-						<div class="heading">
-							<h2>Profile Info</h2>
-							<div class="heart-line">
-								<i class="fas fa-heart"></i>
+					<form action="/dashboard" method="POST">
+						<div class="my-profile">
+							<div class="heading">
+								<h2>Profile Info</h2>
+								<div class="heart-line">
+									<i class="fas fa-heart"></i>
+								</div>
 							</div>
-						</div>
-						<div id="dog-info" class="input-info-box">
-							<div class="header">
-								About Your Dog
-							</div>
-							<div class="content">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="my-input-box">
-											<label>Dog Name</label>
-											<input type="text" placeholder="Dog Name">
+
+							<div id="dog-info" class="input-info-box">
+								<div class="header">
+									About Your Dog
+								</div>
+								<div class="content">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="my-input-box">
+												<label>Dog Name</label>
+												<input name="dogName" type="text" placeholder="Dog Name">
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="my-input-box">
-											<label>Zip Code</label>
-											<input type="integer" placeholder="Zip Code">
+										<div class="col-md-6">
+											<div class="my-input-box">
+												<label>Zip Code</label>
+												<input name="zipcode" type="integer" placeholder="Zip Code">
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="my-input-box">
-											<label>Breed</label>
-											<input type="text" placeholder="Breed">
+										<div class="col-md-6">
+											<div class="my-input-box">
+												<label>Breed</label>
+												<input name="breed" type="text" placeholder="Breed">
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="my-input-box">
-											<label>Age</label>
-											<input type="integer" placeholder="Age">
+										<div class="col-md-6">
+											<div class="my-input-box">
+												<label>Age</label>
+												<input name="age" type="integer" placeholder="Age">
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="my-input-box">
-											<label>Is your dog fixed (spayed / neutered)?</label>
-											<input type="radio" placeholder="Yes">
-											<input type="radio" placeholder="No">
+										<div class="col-md-6">
+											<div id="fixed-div" class="my-input-box">
+												<label>Is your dog fixed (spayed / neutered)?</label>
+												<label for="yes">Yes
+													<input name="yes" type="radio" placeholder="Yes"></label>
+												<label for="no">No
+													<input name="no" type="radio" placeholder="No"></label>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="my-input-box">
-											<label>Energy Level</label>
-											<input type="radio" placeholder="Couch Potato">
-											<input type="radio" placeholder="Frisky">
-											<input type="radio" placeholder="Ballistic">
+										<div class="col-md-6">
+											<div id="energy-div" class="my-input-box">
+												<label>Energy Level</label>
+												<label for="couch-potato">Couch Potato
+													<input name="energy" id="couch-potato" type="radio"
+														placeholder="Couch Potato"></label>
+												<label for="frisky">Frisky
+													<input name="energy" id="frisky" type="radio"
+														placeholder="Frisky"></label>
+												<label for="ballistic">Ballistic
+													<input name="energy" id="ballistic" type="radio"
+														placeholder="Ballistic"></label>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="my-input-box">
-											<label>Size</label>
-											<input type="radio" placeholder="Toy/Teacup">
-											<input type="radio" placeholder="Small">
-											<input type="radio" placeholder="Medium">
-											<input type="radio" placeholder="Large">
+										<div class="col-md-6">
+											<div class="my-input-box" id="size-div">
+												<label>Size</label>
+												<label for="toy-teacup">Toy/Teacup
+													<input name="size" id="toy-teacup" type="radio"
+														placeholder="Toy/Teacup"></label>
+												<label for="small">Small
+													<input name="size" id="small" type="radio"
+														placeholder="Small"></label>
+												<label for="medium">Medium
+													<input name="size" id="medium" type="radio"
+														placeholder="Medium"></label>
+												<label for="large">Large
+													<input name="energy" id="large" type="radio"
+														placeholder="Large"></label>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="my-input-box">
-											<label>Description</label>
-											<textarea name="description" id="" cols="6" rows="4"
-												placeholder="Describe your dog in a few sentences. Feel free to include links to their Instagram and/or TikTok pages!"></textarea>
+										<div class="col-md-6">
+											<div class="my-input-box">
+												<label>Description</label>
+												<textarea name="description" id="description" cols="6" rows="4"
+													placeholder="Describe your dog in a few sentences. Feel free to include links to their Instagram and/or TikTok pages!"></textarea>
+											</div>
 										</div>
 									</div>
 									<div class="input-info-box mt-5">
@@ -354,124 +373,126 @@
 										</div>
 										<div class="content">
 											<div class="row">
-												<form action="/dashboard">
-													<div class="col-md-12">
-														<div class="my-input-box" id="fave-toy-list">
-															<label>Favorite Toys</label>
-															<select name="favetoy" id="fave-toy">
-																<option value="ball">BALL IS LIFE</option>
-																<option value="stuffy">Stuffed Animal</option>
-																<option value="chewy">Chewy Toy / Bone</option>
-																<option value="shoes">Owner's Shoes</option>
-																<option value="squeak">Anything That Squeaks</option>
-															</select>
-														</div>
-														<div class="my-input-box">
-															<label>Favorite Game</label>
-															<select name="favegame" id="fave-game">
-																<option value="tug">Tug-of-War</option>
-																<option value="chase">Chase</option>
-																<option value="wrestling">Wrestling</option>
-																<option value="bite">Bitey Face</option>
-																<option value="touch">No Touch, Only Throw</option>
-															</select>
-														</div>
+												<div class="col-md-12">
+													<div class="my-input-box" id="fave-toy-list">
+														<label>Favorite Toys</label>
+														<select name="faveToy" id="fave-toy">
+															<option value="ball">BALL IS LIFE</option>
+															<option value="stuffy">Stuffed Animal</option>
+															<option value="chewy">Chewy Toy / Bone</option>
+															<option value="shoes">Owner's Shoes</option>
+															<option value="squeak">Anything That Squeaks</option>
+														</select>
 													</div>
-													<button id="submit-btn">
-														<span>Submit</span>
-													</button>
-												</form>
+													<div class="my-input-box">
+														<label>Favorite Game</label>
+														<select name="faveGame" id="fave-game">
+															<option value="tug">Tug-of-War</option>
+															<option value="chase">Chase</option>
+															<option value="wrestling">Wrestling</option>
+															<option value="bite">Bitey Face</option>
+															<option value="touch">No Touch, Only Throw
+															</option>
+														</select>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div id="footer">
-						<div class="w-100 float-start main-search">
-							<div class="container">
-								<div class="heading center-heading heading-white">
-									<h2>Subscribe <strong>With</strong> Us</h2>
-									<p>Crewneck Heather Grey Sweatshirt Made</p>
-								</div>
-								<div class="search-box">
-									<input type="text" name="search" placeholder="Enter Your Email">
-									<button type="button" class="main-btn main-btn-iocn">
-										<span class="d-none-btn">Subscribe</span>
-										<span class="icon">
-											<i class="fas fa-paper-plane"></i>
-										</span>
-									</button>
-								</div>
-							</div>
-						</div>
-						<footer class="w-100 float-start">
-							<div class="container">
-								<div class="main-footer-logo">
-									<a href="index.html">
-										<img src="images/logo.png" class="img-fluid" alt="logo">
-									</a>
-								</div>
-								<div class="footer-content text-center">
-									<p>This theme extends default WordPress profiles. User can edit profile fields,
-										upload
-										photos, add
-										favorites, view gifts and read messages, edit privacy settings without even
-										seeing .
-									</p>
-									<ul class="media-icon">
-										<li><a href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="javascript:;"><i class="fab fa-google-plus-g"></i></a></li>
-										<li><a href="javascript:;"><i class="fab fa-linkedin-in"></i></a></li>
-										<li><a href="javascript:;"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="javascript:;"><i class="fab fa-skype"></i></a></li>
-									</ul>
-								</div>
-								<div class="bootem-footer">
-									<p>© Copyright 2023 by <span>Fervor</span> - Design by <a
-											href="https://webstrot.com/">Webstrot</a>.
-									</p>
-									<ul>
-										<li><a href="community.html">Community</a></li>
-										<li><a href="blog.html">Blog</a></li>
-										<li><a href="contact.html">Conatct Us</a></li>
-									</ul>
-								</div>
-							</div>
-						</footer>
-					</div>
-					<script src="js/jquery-3.6.0.min.js"></script>
-					<script src="js/jquery-ui.min.js"></script>
-					<script src="js/bootstrap.min.js"></script>
-					<script src="js/bootstrap.bundle.js"></script>
-					<script src="js/vanilla-tilt.min.js"></script>
-					<script src="js/owl.carousel.js"></script>
-					<script src="js/range-slider.js"></script>
-					<script src="js/custom.js"></script>
-					<script>
-						$('.match-slider .owl-carousel').owlCarousel({
-							loop: true,
-							items: 1,
-							margin: 30,
-							nav: true,
-							dots: false,
-							autoplay: false,
-							responsive: {
-								0: {
-									items: 1
-								},
-								600: {
-									items: 1,
-									nav: false
-								},
-								1025: {
-									items: 1,
-									nav: true
-								}
-							}
-						})
-					</script>
+						<input type="submit" value="submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<div id="footer">
+		<div class="w-100 float-start main-search">
+			<div class="container">
+				<div class="heading center-heading heading-white">
+					<h2>Subscribe <strong>With</strong> Us</h2>
+					<p>Crewneck Heather Grey Sweatshirt Made</p>
+				</div>
+				<div class="search-box">
+					<input type="text" name="search" placeholder="Enter Your Email">
+					<button type="button" class="main-btn main-btn-iocn">
+						<span class="d-none-btn">Subscribe</span>
+						<span class="icon">
+							<i class="fas fa-paper-plane"></i>
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<footer class="w-100 float-start">
+			<div class="container">
+				<div class="main-footer-logo">
+					<a href="index.html">
+						<img src="images/logo.png" class="img-fluid" alt="logo">
+					</a>
+				</div>
+				<div class="footer-content text-center">
+					<p>This theme extends default WordPress profiles. User can edit profile fields,
+						upload
+						photos, add
+						favorites, view gifts and read messages, edit privacy settings without even
+						seeing .
+					</p>
+					<ul class="media-icon">
+						<li><a href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="javascript:;"><i class="fab fa-google-plus-g"></i></a></li>
+						<li><a href="javascript:;"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="javascript:;"><i class="fab fa-skype"></i></a></li>
+					</ul>
+				</div>
+				<div class="bootem-footer">
+					<p>© Copyright 2023 by <span>Fervor</span> - Design by <a href="https://webstrot.com/">Webstrot</a>.
+					</p>
+					<ul>
+						<li><a href="community.html">Community</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Conatct Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/vanilla-tilt.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/range-slider.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		$('.match-slider .owl-carousel').owlCarousel({
+			loop: true,
+			items: 1,
+			margin: 30,
+			nav: true,
+			dots: false,
+			autoplay: false,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1,
+					nav: false
+				},
+				1025: {
+					items: 1,
+					nav: true
+				}
+			}
+		})
+	</script>
 </body>
 
 </html>
