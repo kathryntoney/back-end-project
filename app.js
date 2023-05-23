@@ -25,10 +25,12 @@ app.use(passport.session())
 
 //routes 
 // app.use(require('./routes/index.js'))
+
 // app.use(require('./routes/login.js')) 
 // app.use(require('./routes/registration.js'))
 
 app.use(require('./routes/dashboard.js')) // manage your profile / settings
+
 // app.use(require('./routes/aboutus.js'))
 // app.use(require('./routes/contactus.js'))
 
