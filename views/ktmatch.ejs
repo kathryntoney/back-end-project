@@ -16,7 +16,9 @@
 
 <head>
 	<meta charset="utf-8">
-	<title><%= pageTitle %> </title>
+	<title>
+		<%= pageTitle %>
+	</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<meta name="description" content="fervor" />
 	<meta name="keywords" content="fervor" />
@@ -292,11 +294,22 @@
 											<%= dog.description %>
 										</p>
 										<ul>
-											<li>Breed: <%= dog.breed %> </li>
-											<li>Age: <%= dog.age %> </li>
-											
+											<li>Breed: <%= dog.breed %>
+											</li>
+											<li>Age: <%= dog.age %>
+											</li>
+											<li>Fixed: <%= dog.fixed %>
+											</li>
+											<li>Favorite Toy: <%= dog.faveToy %>
+											</li>
+											<li>Favorite Game: <%= dog.faveGame %>
+											</li>
+											<li>Energy Level: <%= dog.energy %>
+											</li>
+											<li>Size: <%= dog.size %>
+											</li>
 										</ul>
-												<a id="<%= dog.id %> " href="#" class="main-btn">Message Owner</a>
+										<a id="<%= dog.id %> " href="#" class="main-btn">Message Owner</a>
 									</div>
 								</div>
 							</div>
