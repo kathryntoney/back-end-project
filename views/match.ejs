@@ -233,9 +233,9 @@
 						
 					</div>
 					<div class="search-box">
-						<input type="text" name="search" placeholder="Enter a zip code">
+						<input type="text" id="zipCodeInput" name="search" placeholder="Enter a zip code">
 						<button type="button" class="main-btn main-btn-iocn">
-							<span class="d-none-btn">Search</span>
+							<span class="d-none-btn" id="searchButton">Search</span>
 							<span class="icon">
 								<i class="fas fa-paper-plane"></i>
 							</span>
@@ -262,6 +262,7 @@
 			<div class="match-slider">
 				<div class="">
 					<div class="item">
+						<% profiles.forEach((profile) => { %>
 						<div class="profile-box  w-100 float-start">
 							<div class="profile-box-1 float-start">
 								<div class="profile-img">
@@ -304,6 +305,7 @@
 								</div>
 							</div>
 						</div>
+						<% }) %>
 					</div>
 					<div class="item">
 						<div class="profile-box  w-100 float-start">
@@ -543,6 +545,7 @@
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/range-slider.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/matchclientside.js"
 	<script>
 		$('.match-slider .owl-carousel').owlCarousel({
 			loop: true,
