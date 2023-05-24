@@ -280,14 +280,15 @@
 					</div>
 				</div>
 				<div class="col-lg-8 col-md-12 col-12">
-					<div class="heading">
-						<h2>Profile Info</h2>
-						<div class="heart-line">
-							<i class="fas fa-heart"></i>
-						</div>
-					</div>
 					<form action="/dashboard" method="POST">
 						<div class="my-profile">
+							<div class="heading">
+								<h2>Profile Info</h2>
+								<div class="heart-line">
+									<i class="fas fa-heart"></i>
+								</div>
+							</div>
+
 							<div id="dog-info" class="input-info-box">
 								<div class="header">
 									About Your Dog
@@ -366,47 +367,43 @@
 											</div>
 										</div>
 									</div>
-									<div class="header">
-										Interests
-									</div>
-									<div class="content">
-										<div class="row">
-											<div class="col-md-12">
-												<div class="my-input-box" id="fave-toy-list">
-													<label>Favorite Toys</label>
-													<select name="faveToy" id="fave-toy">
-														<option value="ball">BALL IS LIFE</option>
-														<option value="stuffy">Stuffed Animal</option>
-														<option value="chewy">Chewy Toy / Bone</option>
-														<option value="shoes">Owner's Shoes</option>
-														<option value="squeak">Anything That Squeaks</option>
-													</select>
+									<div class="input-info-box mt-5">
+										<div class="header">
+											Interests
+										</div>
+										<div class="content">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="my-input-box" id="fave-toy-list">
+														<label>Favorite Toys</label>
+														<select name="faveToy" id="fave-toy">
+															<option value="ball">BALL IS LIFE</option>
+															<option value="stuffy">Stuffed Animal</option>
+															<option value="chewy">Chewy Toy / Bone</option>
+															<option value="shoes">Owner's Shoes</option>
+															<option value="squeak">Anything That Squeaks</option>
+														</select>
+													</div>
+													<div class="my-input-box">
+														<label>Favorite Game</label>
+														<select name="faveGame" id="fave-game">
+															<option value="tug">Tug-of-War</option>
+															<option value="chase">Chase</option>
+															<option value="wrestling">Wrestling</option>
+															<option value="bite">Bitey Face</option>
+															<option value="touch">No Touch, Only Throw
+															</option>
+														</select>
+													</div>
 												</div>
-												<div class="my-input-box">
-													<label>Favorite Game</label>
-													<select name="faveGame" id="fave-game">
-														<option value="tug">Tug-of-War</option>
-														<option value="chase">Chase</option>
-														<option value="wrestling">Wrestling</option>
-														<option value="bite">Bitey Face</option>
-														<option value="touch">No Touch, Only Throw
-														</option>
-													</select>
-												</div>
-												
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<input type="submit" value="Submit">
+						<input type="submit" value="submit">
 					</form>
-					<!-- <form action="/dashboard1" method="POST">
-                        <label for="imageURL">Upload your pup's picture here:</label>
-                        <input type="file" accept="image/*" name="imageURL" value="upload">
-                        <input type="submit" value="upload">
-                    </form> -->
 				</div>
 			</div>
 		</div>
@@ -459,7 +456,7 @@
 					<ul>
 						<li><a href="community.html">Community</a></li>
 						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="contact.html">Conatct Us</a></li>
 					</ul>
 				</div>
 			</div>
@@ -496,7 +493,6 @@
 			}
 		})
 	</script>
-
 </body>
 
 </html>
