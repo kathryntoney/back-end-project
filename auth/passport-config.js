@@ -38,7 +38,7 @@ const init = (passport) => {
             console.log("37",id);
             console.log('checkpoint 6 ids did match after deserialization');
             let foundUserInDBfromSessionID = await db.owners.findOne({ where: { randomString: id } });
-            console.log(foundUserInDBfromSessionID);
+            // console.log(foundUserInDBfromSessionID);
             if (foundUserInDBfromSessionID) {
                 done(null, foundUserInDBfromSessionID)
             }

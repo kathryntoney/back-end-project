@@ -5,6 +5,8 @@ const passport = require('passport');
 const cookieSession = require('cookie-session');
 require('./auth/passport-config')(passport);
 const cloudinary = require('cloudinary').v2;
+const multer = require('multer');
+const upload = multer({ dest: __dirname + '/uploads/profilephotos' })
 const port = 3000;
 
 app.use(express.static('public'));
@@ -26,10 +28,13 @@ app.use(passport.session())
 //routes 
 // app.use(require('./routes/index.js'))
 
-app.use(require('./routes/login.js')) 
+app.use(require('./routes/login.js'))
 app.use(require('./routes/registration.js'))
 
 app.use(require('./routes/dashboard.js')) // manage your profile / settings
+app.use(require('./routes/profileupload.js')) // upload profile picture
+app.use(require('./routes/ktlogin.js')) // upload profile picture
+app.use(require('./routes/ktregistration.js')) // upload profile picture
 app.use(require('./routes/match.js')) // manage your profile / settings
 
 // app.use(require('./routes/aboutus.js'))

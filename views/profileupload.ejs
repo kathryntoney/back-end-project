@@ -280,7 +280,17 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-12 col-12">
-                  
+                    <div class="heading">
+                        <h2>Profile Picture</h2>
+                        <div class="heart-line">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <form action="/profileupload" method="POST" enctype='multipart/form-data'>
+                        <label for="imageURL">Upload your pup's picture here:</label>
+                        <input type="file" accept="image/*" name="imageURL" value="upload">
+                        <input type="submit" value="upload">
+                    </form>
                 </div>
             </div>
         </div>
@@ -333,7 +343,7 @@
                     <ul>
                         <li><a href="community.html">Community</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Conatct Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -370,6 +380,7 @@
             }
         })
     </script>
+
 </body>
 
 </html>
