@@ -1973,7 +1973,7 @@ header .main-header .main-menu .login-header .after-login li a small {
   font-size: 12px;
   background: linear-gradient(to right, #fa2456, #fd735a);
 }
-header .banner-shap img {
+/* header .banner-shap img {
   position: absolute;
   top: 0;
   right: 0;
@@ -1994,7 +1994,7 @@ header .shadow-img {
 
 .inner-header header .banner-shap img {
   max-width: 222px;
-}
+} */
 
 @keyframes moveit {
   0% {

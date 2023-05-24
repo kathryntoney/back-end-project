@@ -34,7 +34,7 @@ router.post('/profileupload', upload.single("imageURL"), async (req, res) => {
         { imageURL: imageURL },
         { where: { id: req.session.dogID } }
     )
-    res.redirect('/match')
+    res.redirect('/ktmatch')
 })
 
 module.exports = router;

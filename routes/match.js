@@ -28,12 +28,4 @@ router.get('/match', auth, async (req, res) => {
 
 })
 
-router.get('/match/:dogID', auth, async (req, res) => {
-    let dogID = req.params.id;
-    let record = await db.dogs.findByPk(dogID)
-})
-
-
-
-
 module.exports = router;
