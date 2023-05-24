@@ -25,7 +25,6 @@ cloudinary.config({
 router.post('/profileupload', upload.single("imageURL"), async (req, res) => {
     console.log('dog id from upload route:', req.session.dogID);
     console.log('line 27:', req.file);
-    // let name = req.file.filename
     let picture = req.file.path
     let upload = await cloudinary.uploader.upload(picture)
     console.log(upload.url);
@@ -35,7 +34,7 @@ router.post('/profileupload', upload.single("imageURL"), async (req, res) => {
         { imageURL: imageURL },
         { where: { id: req.session.dogID } }
     )
-    res.redirect('/profileupload')
+    res.redirect('/match')
 })
 
 module.exports = router;

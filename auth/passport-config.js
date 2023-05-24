@@ -8,11 +8,11 @@ const init = (passport) => {
             console.log('checkpoint one');
             let records = await db.owners.findAll({ where: { email } })
             if (records) {
-                console.log('checkpoint two inside records');
+                console.log('checkpoint two inside records', email);
                 let record = records[0]
                 bcrypt.compare(password, record.password, (error, match) => {
                     if (match) {
-                        console.log('checkpoint 3 passwords did match');
+                        console.log('checkpoint 3 passwords did match', record.id);
                         return done(null, record)
                     }
                     else {
@@ -28,16 +28,16 @@ const init = (passport) => {
         }
     }))
     passport.serializeUser((user, done) => {
-        console.log("31", user.randomString);
+        console.log("31", user.id);
         console.log('checkpoint 5 inside serialize user');
-        done(null, user.randomString)
+        done(null, user.id)
     })
 
     passport.deserializeUser(async (id, done) => {
         try {
-            console.log("37",id);
+            console.log("line 38",id);
             console.log('checkpoint 6 ids did match after deserialization');
-            let foundUserInDBfromSessionID = await db.owners.findOne({ where: { randomString: id } });
+            let foundUserInDBfromSessionID = await db.owners.findOne({ where: { id: id } });
             // console.log(foundUserInDBfromSessionID);
             if (foundUserInDBfromSessionID) {
                 done(null, foundUserInDBfromSessionID)
