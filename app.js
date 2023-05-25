@@ -15,6 +15,11 @@ const port = 3000;
 
 app.use(express.static('public'));
 app.use(helmet())
+app.use(helmet.contentSecurityPolicy({
+    directives: {
+        "img-src": ["'self'", "data:", "res.cloudinary.com"]
+    }
+}));
 app.set('view engine', 'ejs');
 
 // app.use(express.urlencoded({ extended: true }))
@@ -30,16 +35,17 @@ app.use(passport.initialize());
 app.use(passport.session())
 
 //routes 
-// app.use(require('./routes/index.js'))
+
 
 app.use(require('./routes/login.js'))
 app.use(require('./routes/registration.js'))
-
+app.use(require('./routes/index.js'))
 app.use(require('./routes/dashboard.js')) // manage your profile / settings
 app.use(require('./routes/profileupload.js')) // upload profile picture
 app.use(require('./routes/ktlogin.js')) // upload profile picture
 app.use(require('./routes/ktregistration.js')) // upload profile picture
 app.use(require('./routes/match.js')) // manage your profile / settings
+app.use(require('./routes/ktmatch.js')) // manage your profile / settings
 app.use(require('./routes/seeMessages.js')) // manage your profile / settings
 
 app.use(require('./routes/about.js'))
