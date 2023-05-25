@@ -16,7 +16,7 @@ router.get('/dogcreation', (req, res) => {
 })
 
 router.post('/dogcreation', auth, async (req, res) => {
-    console.log('inside dashboard line 19: ', req.session.passport.user);
+    console.log('inside dog creation line 19: ', req.session.passport.user);
     // console.log('line 20: ', req.user.id);
     let ownerID = req.session.passport.user;
     console.log('checking owner id line 22: ', ownerID);
@@ -43,7 +43,7 @@ router.post('/dogcreation', auth, async (req, res) => {
         console.log(req.session.dogID);
         res.redirect('/profileupload')
     } catch (error) {
-        console.log('error inside submit');
+        console.log('error inside submit', error);
     }
 })
 

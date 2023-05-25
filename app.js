@@ -50,7 +50,7 @@ app.use(require('./routes/seeMessages.js')) // manage your profile / settings
 app.use(require('./routes/dogcreation.js')) // manage your profile / settings
 
 // app.use(require('./routes/aboutus.js'))
-// app.use(require('./routes/contactus.js'))
+app.use(require('./routes/contactus.js'))
 // app.use(require('./routes/SendMessage.js'))
 
 app.use(require('./routes/messages.js')) // DM with another dog

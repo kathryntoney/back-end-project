@@ -54,7 +54,6 @@
 	</div>
 	<a href="javascript:;" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
 	<div id="header">
-
 		<header class="w-100 float-start">
 			<div class="main-header w-100 float-start">
 				<div class="container-fluid">
@@ -93,7 +92,7 @@
 
 								<div class="main-btn float-end d-none d-lg-block">
 									<div class="menuBtn ">
-										<a href="login.html">Login</a> / <a href="sing-up.html">Register</a>
+										<a href="/ktlogin">Login</a> / <a href="/ktregistration">Register</a>
 									</div>
 								</div>
 								<div class="mobToggle d-flex d-lg-none">
@@ -166,7 +165,7 @@
 											<li>Size: <%= dog.size %>
 											</li>
 										</ul>
-										<a id="<%= dog.id %>" href="/SendComment" class="main-btn">Send a message from <%= dog.dogName %>
+										<a id="<%= dog.id %>" href="/SendComment" class="main-btn">Send a message
 												</a>
 									</div>
 								</div>
@@ -189,6 +188,7 @@
 						</div>
 						<% }) %>
 				</div>
+				<a href="/dogcreation" class="main-btn">Add another dog </a>
 			</div>
 		</div>
 	</div>
