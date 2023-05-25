@@ -23,9 +23,12 @@ router.get('/dashboard', auth, async (req, res) => {
     try {
         console.log('inside try');
         let records = await db.dogs.findAll({
-            where: { ownerID: req.session.passport.user }
+            where: { ownerID: req.session.passport.user }, include:[{
+                model: db.messages,
+                required: true
+            }]
         })
-        console.log(records);
+        console.log(records[0].messages);
         res.render('dashboard', {
             allDogs: records
         })

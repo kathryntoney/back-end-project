@@ -166,10 +166,25 @@
 											<li>Size: <%= dog.size %>
 											</li>
 										</ul>
-										<a id="<%= dog.id %>" href="/messages" class="main-btn">See <%= dog.dogName %>
-												's Messages </a>
+										<a id="<%= dog.id %>" href="/SendComment" class="main-btn">Send a message from <%= dog.dogName %>
+												</a>
 									</div>
 								</div>
+							</div>
+							<div>
+								<% dog.messages.forEach(message => { %>
+								 
+									<div class="card">
+										<div class="card-body">
+										<h4>From: <%= message.Sender %> </h4>
+										<p><%= message.createdAt %> </p>	
+										<h5>Message: <%= message.message %> </h5>
+
+											
+										</div>
+										<% }) %>
+								  </div>
+								  </div>
 							</div>
 						</div>
 						<% }) %>
