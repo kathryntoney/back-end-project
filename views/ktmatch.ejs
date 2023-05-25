@@ -181,17 +181,9 @@
 			</div>
 		</footer>
 	</div>
-	<script>
-		const handleSearchClick = async () => {
-			try {
-				const zipCode = document.getElementById('zipCodeInput').value;
-				await axios.get('/ktmatch/zipcode', { params: { zipCode } });
-			} catch (error) {
-				console.error('Error occurred during search:', error);
-			}
-		}
-		const searchButton = document.getElementById('searchButton');
-		searchButton.addEventListener('click', handleSearchClick);
+	<script src="js/clintsideSearch.js">
+		
+		
 	</script>
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>

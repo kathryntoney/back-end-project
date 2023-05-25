@@ -10,9 +10,7 @@ let form = document.querySelector('#form')
 form.addEventListener('submit', async (e) => {
     e.preventDefault()
     console.log("form");
-    let nums ={userANumber:"17705466265", userBNumber:"18328141362"}
-//  let userANumber = req.session.phonenum
-// let userBNumber = localStorage.getItem('userBNumber')
+  
 let dogID = 32
     let response = await fetch('/messages',{
         method:'POST',

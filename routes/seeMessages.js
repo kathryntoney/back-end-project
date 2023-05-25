@@ -6,7 +6,7 @@ router.use(express.json())
 
 
 router.get('/SeeMessage/:id', async(req,res)=>{
-    let ownerID = req.user.id
+   
     
         let dogID = await db.dogs.findAll({where:{ownerID:ownerID}})
         let messages = await db.messages.findAll({where:{dogID:dogID}})
