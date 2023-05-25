@@ -42,4 +42,19 @@ router.get('/ktmatch1', async (req, res) => {
     }
 })
 
+
+router.post('/ktmatch', async (req, res) => {
+    try {
+        const { zipcode } = req.body;
+        console.log(zipcode);
+        // Retrieve the profiles based on the zip code from your database
+       let allDogs = await db.dogs.findAll({ where: { zipcode } }); // Replace with your own logic
+        console.log("allDogs",allDogs);
+    //    res.send(allDogs)
+        res.render('ktmatch', {allDogs:allDogs  });
+    } catch (error) {
+        console.error('Error occurred during search:', error);
+        res.status(500).send('Internal Server Error');
+    }
+})
 module.exports = router;

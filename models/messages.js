@@ -17,7 +17,8 @@ module.exports = (sequelize, DataTypes) => {
   messages.init({
     dogID: DataTypes.INTEGER,
     message: DataTypes.STRING,
-    timestamp: DataTypes.DATE
+    timestamp: DataTypes.DATE,
+    Sender: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'messages',
