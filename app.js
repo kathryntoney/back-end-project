@@ -14,12 +14,12 @@ const SmsProxy = require('./SmsProxy');
 const port = 3000;
 
 app.use(express.static('public'));
-app.use(helmet())
-app.use(helmet.contentSecurityPolicy({
-    directives: {
-        "img-src": ["'self'", "data:", "res.cloudinary.com"]
-    }
-}));
+// app.use(helmet())
+// app.use(helmet.contentSecurityPolicy({
+//     directives: {
+//         "img-src": ["'self'", "data:", "res.cloudinary.com"]
+//     }
+// }));
 app.set('view engine', 'ejs');
 
 // app.use(express.urlencoded({ extended: true }))
