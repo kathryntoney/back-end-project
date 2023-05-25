@@ -1,24 +1,24 @@
-#Fetch a Friend
+# Fetch a Friend
 
 ![image](https://github.com/kathryntoney/back-end-project/assets/127783825/c8c9a349-ed21-4965-8d05-b5d8df552105)
 
-##About the Project:
+## About the Project:
 Our web dev class was tasked with creating a full-stack project (with emphasis on back end). We decided to create a version of Bumble/Hinge, but for dog owners looking for a playmate for their pups. Fetch a Friend allows a user to create an account, set up a profile for their dog, and search for other dogs by zipcode.  The dog profiles include criteria such as size, energy level, and description so that the owner can identify a suitable match.  Then owners can message each other to set up playdates.
 
-##Built With:
--Express
--Node.js
--Sequelize
--PostgreSQL
--Beekeeper
--ElephantSQL
--EJS
--Theme Forest Template
--Cloudinary
--Passport.js
--bcrypt.js
+## Built With:
+- Express
+- Node.js
+- Sequelize
+- PostgreSQL
+- Beekeeper
+- ElephantSQL
+- EJS
+- Theme Forest Template
+- Cloudinary
+- Passport.js
+- bcrypt.js
 
-##Usage:
+## Usage:
 Sign up for, or log in to, the site:
 ![image](https://github.com/kathryntoney/back-end-project/assets/127783825/c8ca580b-d6aa-4382-8aa4-ece2717ca6d7)
 
