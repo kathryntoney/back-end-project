@@ -12,9 +12,9 @@ router.use(express.urlencoded({ extended: false }))
 router.use(express.json())
 
 cloudinary.config({
-    cloud_name: 'fetch-a-friend',
-    api_key: '393814593521973',
-    api_secret: 'inE7ab_iEOOeC7Ljiw1aUqieGK8'
+    cloud_name: process.env.CLOUD_NAME,
+    api_key: process.env.CLOUD_KEY,
+    api_secret: process.env.CLOUD_SECRET
 });
 
 router.get('/dashboard', auth, async (req, res) => {
@@ -32,6 +32,15 @@ router.get('/dashboard', auth, async (req, res) => {
         res.render('dashboard', {
             allDogs: records
         })
+
+        // console.log('inside try');
+        // let records = await db.dogs.findAll({
+        //     where: { ownerID: req.session.passport.user }
+        // })
+        // // console.log(records[0].messages);
+        // res.render('dashboard', {
+        //     allDogs: records
+        // })
     } catch (error) {
         console.log('error in dog filter: ', error);
         res.render('dashboard')

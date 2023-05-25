@@ -81,6 +81,7 @@
 									<li><a href="/">Home</a></li>
 									<li><a href="/contactus">Contact</a></li>
 									<li><a href="/ktmatch">Dog Search</a></li>
+									<li><a href="/dashboard">Owner Dashboard</a></li>
 									<li class="d-none d-lg-block">
 										<button class="js-toggle-dark-mode" type="button">
 											<i class="fa fa-sun-o darkSunMode" aria-hidden="true"></i>
@@ -166,31 +167,35 @@
 											</li>
 										</ul>
 										<a id="<%= dog.id %>" href="/SendComment" class="main-btn">Send a message
-												</a>
+										</a>
 									</div>
 								</div>
 							</div>
 							<div>
-								<% dog.messages.forEach(message => { %>
-								 
+								<% dog.messages.forEach(message=> { %>
+
 									<div class="card">
 										<div class="card-body">
-										<h4>From: <%= message.Sender %> </h4>
-										<p><%= message.createdAt %> </p>	
-										<h5>Message: <%= message.message %> </h5>
+											<h4>From: <%= message.Sender %>
+											</h4>
+											<p>
+												<%= message.createdAt %>
+											</p>
+											<h5>Message: <%= message.message %>
+											</h5>
 
-											
+
 										</div>
 										<% }) %>
-								  </div>
-								  </div>
+									</div>
 							</div>
 						</div>
-						<% }) %>
 				</div>
-				<a href="/dogcreation" class="main-btn">Add another dog </a>
+				<% }) %>
 			</div>
+			<a href="/dogcreation" class="main-btn">Add another dog </a>
 		</div>
+	</div>
 	</div>
 	<div id="footer">
 

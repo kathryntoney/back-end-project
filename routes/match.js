@@ -9,9 +9,9 @@ const multer = require('multer');
 const upload = multer({ dest: __dirname + '/uploads/profilephotos' })
 
 cloudinary.config({
-    cloud_name: 'fetch-a-friend',
-    api_key: '393814593521973',
-    api_secret: 'inE7ab_iEOOeC7Ljiw1aUqieGK8'
+    cloud_name: process.env.CLOUD_NAME,
+    api_key: process.env.CLOUD_KEY,
+    api_secret: process.env.CLOUD_SECRET
 });
 
 router.get('/match', auth, async (req, res) => {
