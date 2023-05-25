@@ -7,6 +7,10 @@ require('./auth/passport-config')(passport);
 const cloudinary = require('cloudinary').v2;
 const multer = require('multer');
 const upload = multer({ dest: __dirname + '/uploads/profilephotos' })
+require('dotenv').config();
+const SmsProxy = require('./SmsProxy');
+
+
 const port = 3000;
 
 app.use(express.static('public'));
@@ -18,8 +22,8 @@ app.use(helmet.contentSecurityPolicy({
 }));
 app.set('view engine', 'ejs');
 
-app.use(express.urlencoded({ extended: false }))
-app.use(express.json())
+// app.use(express.urlencoded({ extended: true }))
+// app.use(express.json())
 
 app.use(cookieSession({
     name: 'session',
@@ -42,12 +46,14 @@ app.use(require('./routes/ktlogin.js')) // upload profile picture
 app.use(require('./routes/ktregistration.js')) // upload profile picture
 app.use(require('./routes/match.js')) // manage your profile / settings
 app.use(require('./routes/ktmatch.js')) // manage your profile / settings
+app.use(require('./routes/seeMessages.js')) // manage your profile / settings
 
-// app.use(require('./routes/aboutus.js'))
-// app.use(require('./routes/contactus.js'))
+app.use(require('./routes/about.js'))
+app.use(require('./routes/contactus.js'))
 
 
 app.use(require('./routes/messages.js')) // DM with another dog
+app.use(require('./routes/SendComment.js')) // DM with another dog
 //  app.use(require('./routes/profile.js')) // view another dog's profile
 // app.use(require('./routes/search.js')) // view another dog's profile
 
