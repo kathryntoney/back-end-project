@@ -35,7 +35,7 @@ app.use(passport.session())
 
 app.use(require('./routes/login.js'))
 app.use(require('./routes/registration.js'))
-app.use(require('./routes/home.js'))
+app.use(require('./routes/index.js'))
 app.use(require('./routes/dashboard.js')) // manage your profile / settings
 app.use(require('./routes/profileupload.js')) // upload profile picture
 app.use(require('./routes/ktlogin.js')) // upload profile picture
