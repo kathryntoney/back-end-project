@@ -5,30 +5,30 @@ router.use(express.urlencoded({ extended: false }))
 router.use(express.json())
 
 
-router.get('/SendComment', async (req,res) => {
-    try{
+router.get('/SendComment', async (req, res) => {
+    try {
         let records = await db.dogs.findAll()
-     
- 
-        
-        res.render('SendComment', {dogs: records})
+
+
+
+        res.render('SendComment', { dogs: records })
     }
-    catch{
-        res.render('SendComment', {dogs:""})
+    catch {
+        res.render('SendComment', { dogs: "" })
     }
-   
+
 })
 
 
-router.post('/SendComment', async (req,res) => {
-    let {dog, message} = req.body
-    
+router.post('/SendComment', async (req, res) => {
+    let { dog, message } = req.body
+
     let insertRecord = await db.messages.create({
-        dogID:dog,
-        message:message
-        
+        dogID: dog,
+        message: message
+
     })
-    res.redirect('/SendComment')
+    res.redirect('/dashboard')
 })
 
 
