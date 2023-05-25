@@ -1,49 +1,37 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../models');
-require('dotenv').config();
 const auth = require('../auth');
 const passport = require('passport');
-const bcrypt = require('bcryptjs');
+require('dotenv').config();
+const cloudinary = require('cloudinary').v2;
+const multer = require('multer');
+const upload = multer({ dest: __dirname + '/uploads/profilephotos' })
 
 router.use(express.urlencoded({ extended: false }))
 router.use(express.json())
 
-router.get('/dashboard', (req, res) => {
-    res.render('dashboard', {
-        error: ""
-    })
-})
+cloudinary.config({
+    cloud_name: 'fetch-a-friend',
+    api_key: '393814593521973',
+    api_secret: 'inE7ab_iEOOeC7Ljiw1aUqieGK8'
+});
 
-router.post('/dashboard', auth, async (req, res) => {
-    console.log('inside dashboard line 19: ', req.session.passport.user);
-    // console.log('line 20: ', req.user.id);
-    let ownerID = req.session.passport.user;
-    console.log('checking owner id line 22: ', ownerID);
+router.get('/dashboard', auth, async (req, res) => {
+    // let ownerID = req.session.passport.user;
+    // console.log(ownerID);
     try {
         console.log('inside try');
-        let { dogName, zipcode, breed, age, fixed, description, faveToy, faveGame, energy, size, imageURL } = req.body;
-        let newDog = await db.dogs.create({
-            dogName: dogName,
-            ownerID: `${ownerID}`,
-            zipcode: zipcode,
-            breed: breed,
-            age: age,
-            fixed: fixed,
-            description: description,
-            faveToy: faveToy,
-            faveGame: faveGame,
-            energy: energy,
-            size: size,
-            imageURL: imageURL,
-            createdAt: new Date(),
-            updatedAt: new Date()
+        let records = await db.dogs.findAll({
+            where: { ownerID: req.session.passport.user }
         })
-        req.session.dogID = newDog.dataValues.id
-        console.log(req.session.dogID);
-        res.redirect('/profileupload')
+        console.log(records);
+        res.render('dashboard', {
+            allDogs: records
+        })
     } catch (error) {
-        console.log('error inside submit');
+        console.log('error in dog filter: ', error);
+        res.render('dashboard')
     }
 })
 

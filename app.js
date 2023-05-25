@@ -47,6 +47,7 @@ app.use(require('./routes/ktregistration.js')) // upload profile picture
 app.use(require('./routes/match.js')) // manage your profile / settings
 app.use(require('./routes/ktmatch.js')) // manage your profile / settings
 app.use(require('./routes/seeMessages.js')) // manage your profile / settings
+app.use(require('./routes/dogcreation.js')) // manage your profile / settings
 
 app.use(require('./routes/about.js'))
 app.use(require('./routes/contactus.js'))
