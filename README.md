@@ -29,3 +29,9 @@ If you are a returning user, you will be directed to a dashboard which displays 
 ![image](https://github.com/kathryntoney/back-end-project/assets/127783825/e1e25f26-f295-41fc-8726-09893f1bdda6)
 
 You can then access the Dog Search, to look at profiles of the other dogs in our database. You can filter by zipcode, if you'd like to search for dogs in a specific area.
+
+## Authors:
+- Kelly Henderson: https://github.com/Hendersonkelly
+- Jordan Pufon: https://github.com/jpufon
+- Katie Toney: https://github.com/kathryntoney - https://www.linkedin.com/in/katietoney/
+- Project Link: https://github.com/kathryntoney/back-end-project
