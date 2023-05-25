@@ -42,9 +42,9 @@ app.use(require('./routes/ktregistration.js')) // upload profile picture
 app.use(require('./routes/match.js')) // manage your profile / settings
 app.use(require('./routes/seeMessages.js')) // manage your profile / settings
 
-app.use(require('./routes/about.js'))
-app.use(require('./routes/contactus.js'))
-
+// app.use(require('./routes/aboutus.js'))
+// app.use(require('./routes/contactus.js'))
+app.use(require('./routes/SendMessage.js'))
 
 app.use(require('./routes/messages.js')) // DM with another dog
 app.use(require('./routes/SendComment.js')) // DM with another dog
