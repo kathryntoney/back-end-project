@@ -16,6 +16,7 @@ router.post('/ktregistration', async (req, res) => {
     try {
         console.log('inside try');
         let { firstName, lastName, email, password, phonenum } = req.body;
+        console.log("katie registration",req.body);
         password = bcrypt.hashSync(password, 8)
         // console.log(password);
         let insertRecord = await db.owners.create({

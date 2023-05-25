@@ -31,6 +31,7 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/messages.css">
 </head>
 
 <body>
@@ -238,15 +239,17 @@
 		</div>
 	</div>
 	<div class="main-chat-box w-100 float-start">
-		<div class="container">
+		<div class="container-fluid">
 			
-					<div class="msger">
-						<main class="msger-chat"></main>
-						<form class="msger-inputarea">
-							<span><i class="fas fa-image"></i></span>
-							<input type="text" class="msger-input" placeholder="Message...">
-							<button type="submit" class="msger-send-btn"><i class="fas fa-paper-plane"></i>Submit</button>
-						</form>
+					<div class="msger container-fluid">
+						
+						<form id="form">      
+							   
+							
+							<textarea name="message" class="feedback-input" placeholder="Comment"></textarea>
+							<input type="submit" value="SUBMIT"/>
+							
+						  </form>
 					</div>
 				</div>
 			</div>
@@ -309,6 +312,7 @@
 	<script src="js/range-slider.js"></script>
 	<script src="js/chatbot.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/clientMessages.js"></script>
 </body>
 
 </html>

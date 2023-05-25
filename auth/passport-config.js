@@ -30,14 +30,14 @@ const init = (passport) => {
     passport.serializeUser((user, done) => {
         console.log("31", user.randomString);
         console.log('checkpoint 5 inside serialize user');
-        done(null, user.randomString)
+        done(null, user.id)
     })
 
     passport.deserializeUser(async (id, done) => {
         try {
             console.log("37",id);
             console.log('checkpoint 6 ids did match after deserialization');
-            let foundUserInDBfromSessionID = await db.owners.findOne({ where: { randomString: id } });
+            let foundUserInDBfromSessionID = await db.owners.findOne({ where: { id: id } });
             // console.log(foundUserInDBfromSessionID);
             if (foundUserInDBfromSessionID) {
                 done(null, foundUserInDBfromSessionID)
