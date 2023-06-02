@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const db = require('../models');
+const jwt = require('jsonwebtoken');
 
 router.use(express.urlencoded({ extended: false }))
 router.use(express.json())
@@ -29,7 +30,7 @@ router.post('/ktregistration', async (req, res) => {
             updatedAt: new Date()
         })
         // res.json(insertRecord)
-        res.redirect('/ktlogin')
+        res.redirect('/dogcreation')
 
     } catch (error) {
         console.log('inside error');

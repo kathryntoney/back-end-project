@@ -18,7 +18,7 @@ router.get('/match', auth, async (req, res) => {
     try {
         let records = await db.dogs.findAll()
         res.render('match', {
-            allDogs: records,
+            profiles: records,
             pageTitle: "Fetch a Friend"
         })
     } catch (error) {
