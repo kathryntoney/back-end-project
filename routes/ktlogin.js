@@ -8,7 +8,7 @@ router.get('/ktlogin', (req, res) => {
 
 router.post('/ktlogin',
     passport.authenticate('local', {
-        successRedirect: '/dashboard',
+        successRedirect: '/ktmatch',
         failureRedirect: '/ktlogin'
     }))
 

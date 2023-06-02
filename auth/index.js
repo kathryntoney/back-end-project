@@ -7,8 +7,8 @@ const authReq = (req, res, next) => {
     if(auth){
         return next()
     }
-    else{
-        res.redirect('/login')
+    else{ 
+        res.redirect('/ktlogin')
     }
 }
 
